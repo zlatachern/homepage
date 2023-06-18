@@ -102,6 +102,7 @@ body {
   line-height: 30px;
   letter-spacing: 3px;
   color: var(--primary-text-color);
+  margin-bottom: 20px;
 }
 
 .heading--h4 {
@@ -110,12 +111,14 @@ body {
   line-height: 30px;
   letter-spacing: 3px;
   color: var(--black--text-color);
+  margin-top: 20px;
 }
 
 .paragraph--date {
   font-family: 'Montserrat';
   font-size: 14px;
   color: var(--secondary-text-color);
+  margin: 10px 0;
 }
 
 .paragraph--text {
@@ -144,6 +147,14 @@ body {
     text-decoration: none;
     display: flex;
     justify-content: start;
+}
+
+.block--experince {
+  max-width: 400px;
+  background-color: rgba(235, 232, 228, 0.493);
+  padding: 20px;
+  border-radius: 20px;
+  margin-top: 80px;
 }
 
 .contact-info__item:not(:last-child) {
