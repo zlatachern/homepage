@@ -149,7 +149,98 @@ body {
     justify-content: start;
 }
 
-.block--experince {
+.popup {
+  display: none;
+}
+
+.button--popup {
+  display: flex;
+  position: relative;
+  background: none;
+  left: 250px;
+  top: -5px;
+  border: 0;
+  transform-style: preserve-3d;
+  transform: rotateX(45deg)rotateZ(45deg);
+  cursor: pointer;
+  animation: jump 0.5s infinite alternate;
+  animation-delay: 2s;
+}
+
+@keyframes jump {
+  0% {
+    transform: rotateX(45deg) rotateZ(45deg) translateY(0);
+  }
+  50% {
+    transform: rotateX(45deg) rotateZ(45deg) translateY(-5px);
+  }
+  100% {
+    transform: rotateX(45deg) rotateZ(45deg) translateY(0);
+  }
+}
+
+.button--popup > .violet {
+  position: absolute;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  background-color: var(--primary-text-color);
+  transform: translate(-50%,-50%);
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.violet::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1em;
+  left: 0;
+  background-color: var(--primary-text-color);
+  transform: rotateZ(-45deg) translateY(-.5em);
+  transition: height 150ms, transform 150ms;
+}
+
+.violet::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  background-color: var(--primary-text-color);
+  transform: rotateZ(-45deg) translateY(-1em);
+  transition: transform 150ms;
+  border: 1px solid rgb(243, 243, 243);
+}
+
+ul {
+  padding-left: 20px;
+  list-style: none;
+}
+
+ul li {
+  position: relative;
+  padding-left: 15px;
+}
+
+ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--primary-text-color);
+}
+
+.block--style {
   max-width: 400px;
   background-color: rgba(235, 232, 228, 0.493);
   padding: 20px;
