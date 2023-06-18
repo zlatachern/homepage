@@ -1,25 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Nunito&family=Open+Sans&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  width: 17px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #e4e4e4;
+  border-radius: 100px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(180deg, #c17bd4 0%, #708ad4 99%);
+  box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+}
+
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4eccd23;
   line-height: 1.5;
 
-  --primary-text-color: #181820;
-  --secondary-text-color: #5c5c62;
-  --durability-text-color: #6a737d9c;
-  --icon-color: #6a737d;
-  --border-color: #ff9a0045;
-  --text-decoration-color: #ff9a00;
+  --primary-text-color: #7E5AFF;
+  --secondary-text-color: #00000065;
+  --black--text-color: #000;
 }
 
 .container {
   margin: 0 auto;
   padding: 0 30px;
-  max-width: 900px;
+  max-width: 1100px;
 }
 
 .fh {
@@ -39,11 +56,10 @@ body {
   border: 1px solid #f5f5f5;
   box-shadow: 1px 1px 7px 7px #f5f5f5;
   padding: 30px 0;
-  max-width: 900px;
+  max-width: 1200px;
 }
 
 .resume__block {
-  border-bottom: 3px solid var(--border-color);
   padding-bottom: 30px;
   margin-bottom: 15px;
 }
@@ -76,8 +92,36 @@ body {
 .contact-info__header {
     color: var(--primary-text-color);
     margin-bottom: 15px;
-    text-decoration-color: var(--text-decoration-color);
-    text-decoration-line: underline;
+    font-size: 40px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.heading--h3 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 28px;
+  line-height: 30px;
+  letter-spacing: 3px;
+  color: var(--primary-text-color);
+}
+
+.heading--h4 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 3px;
+  color: var(--black--text-color);
+}
+
+.paragraph--date {
+  font-family: 'Montserrat';
+  font-size: 14px;
+  color: var(--secondary-text-color);
+}
+
+.paragraph--text {
+  font-family: 'Montserrat';
+  font-size: 16px;
+  color: var(--secondary-text-color);
 }
 
 .contact-info__sub-header {
