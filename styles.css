@@ -27,7 +27,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 body {
-  background-color: #f1e7c03d;
+  background-color: #f8f3e13d;
   line-height: 1.5;
 
   --primary-text-color: #7E5AFF;
@@ -155,8 +155,6 @@ body {
   padding: 30px;
   border: 3px solid var(--primary-text-color);
 }
-
-
 
 .contact-info__block {
     max-width: 150px;
@@ -290,6 +288,7 @@ ul li::before {
 }
 
 /* Photos  */
+
 .img--meme {
   max-width: 295px;
   min-width: 150px;
@@ -299,6 +298,12 @@ ul li::before {
   width: 20px;
 }
 
+.block--experience__img {
+  max-width: 120px;
+  border-radius: 50%;
+}
+
+/* Media  */
 
 @media screen and (max-width: 576px) {
 
